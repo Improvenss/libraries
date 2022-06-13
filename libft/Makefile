@@ -6,7 +6,7 @@
 #    By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 02:23:57 by gsever            #+#    #+#              #
-#    Updated: 2022/06/14 00:39:27 by gsever           ###   ########.fr        #
+#    Updated: 2022/06/14 01:59:53 by gsever           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ FLAGS			:= -Wall -Werror -Wextra
 #	Includes Files --> Kutuphane
 INCLUDES_DIR	:= ./includes
 INCLUDES		:= -I$(INCLUDES_DIR)
+MODULES			:= $(wildcard modules/*)
 
 #	Sources Files --> Kaynak
 SOURCES_DIRECTORY	:= ./sources
@@ -49,6 +50,10 @@ $(OBJECTS_DIRECTORY):
 $(OBJECTS_DIRECTORY)/%.o: $(SOURCES_DIRECTORY)/%.c
 	@$(CC) $(FLAGS) $(INCLUDES) -c $< -o $@
 	@printf "%-57b %b" "$(BLUE)COMPILED $(LB)$@" "$(GREEN)[✓]$(X)\n"
+
+$(MODULES):
+	@make -C $@ $(MAKECMDGOALS)
+	@printf "%-14b %-42b %b" "$(COM_COLOR)$(MAKECMDGOALS)" "$(OBJ_COLOR)$@" "$(OK_COLOR)[✓]$(NO_COLOR)\n"
 
 clean:
 	@rm -rf $(OBJECTS_DIRECTORY)
