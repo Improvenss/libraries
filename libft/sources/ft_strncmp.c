@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:37:24 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 12:45:23 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:38 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //comparing n times, if find different doing s1 - s2 = int. Bu ne bicm ing
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

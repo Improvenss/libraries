@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 19:14:50 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/14 11:44:53 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:16:28 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "limits.h"
+#include "../includes/libft.h"
 /*
 static int = program calistirildiktan bitisine kadar saymaya devam eder.
 char dizisinden olusan bir stringi integer olarak yazdiriyor.

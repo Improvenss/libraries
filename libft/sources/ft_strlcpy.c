@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:37:07 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 11:30:31 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:26 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //copying but returning to size|source-size->destination|(boyutukadarkopyalama)
 size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {

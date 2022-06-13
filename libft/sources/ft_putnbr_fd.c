@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:36:22 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/11 12:42:22 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:57 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //witing integer in the file. '0' + n kismi int'i char'a cevirme
 void	ft_putnbr_fd(int n, int fd)
 {

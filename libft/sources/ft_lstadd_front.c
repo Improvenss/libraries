@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:35:05 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/13 11:55:59 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:19 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 /*
 linked list yani bagli liste dinamik boyutludur istedigi zaman artar.
 -veri yapilari yani data structures-

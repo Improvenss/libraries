@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:37:16 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/14 14:14:22 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:33 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 /*
 stringde bulunan bir karakteri f'nin butun karakterlerine uygular
 sonucu yeni bir stringe atar

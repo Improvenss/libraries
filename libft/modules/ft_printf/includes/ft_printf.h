@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 14:25:26 by gsever            #+#    #+#             */
-/*   Updated: 2022/03/02 22:46:34 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 22:28:06 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdio.h>
-# include "libft.h"
+# include "../../../includes/libft.h"
 //utils
 int	ft_printf(const char *format, ...);
 int	ft_print_char(const int c);

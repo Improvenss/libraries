@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:36:47 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/14 13:21:49 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:15 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //istenilen string kadar malloc'ta yer ayirior, string'i icine koyup return edio
 static char	*ft_strcpy(char *dst, const char *src)
 {

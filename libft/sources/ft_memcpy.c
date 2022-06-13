@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:35:54 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/27 14:42:27 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:45 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //throwing source to destination e.g.:"sourceation" or "gork5" |not adres va mi
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

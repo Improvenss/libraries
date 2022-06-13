@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 19:14:59 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 16:11:15 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:16:42 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //mallocla yer ayirdiktan sonra \0 'la dolduruyor "null"la yani
 void	*ft_calloc(size_t nmemb, size_t size)
 {

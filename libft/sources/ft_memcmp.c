@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 19:24:40 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 15:14:28 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:42 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 /*
 2 string arasinda istenilen kadar (n) sayar, esitse 0 doner
 degilse baytinin farkini alir ve onu dondurur. Cunku fonk int tanimlanmis.

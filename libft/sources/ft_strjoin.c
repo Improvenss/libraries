@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:36:58 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 17:18:20 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:21 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 /*
 s1 = "gorkem" | s2 = "sever" --> gorkemsever
 2 stringi birlestiriyor.

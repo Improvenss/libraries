@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:37:31 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 12:49:52 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:18:43 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //strchr.c'nin tersi. sondan baslayarak geriye dogru taramaya basliyor.
 char	*ft_strrchr(const char *s, int c)
 {

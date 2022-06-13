@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 14:35:17 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/13 13:50:00 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:28 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //iterates the list 'lst' and applies the function on the content of each node.
 //Listenin üzerinde dolanır ve 'f' listenin her elemaninin içeriğine uygular.
 void	ft_lstiter(t_list *lst, void (*f)(void *))

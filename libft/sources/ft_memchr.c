@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 19:15:53 by gsever            #+#    #+#             */
-/*   Updated: 2022/02/10 15:01:24 by gsever           ###   ########.fr       */
+/*   Updated: 2022/06/13 23:17:40 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 //"abc" de 'n' kadar c yi ariyor, bulunca c'nin adresini atiyor. bulamazsa null
 void	*ft_memchr(const void *s, int c, size_t n)
 {
