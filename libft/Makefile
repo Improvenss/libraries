@@ -6,7 +6,7 @@
 #    By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 02:23:57 by gsever            #+#    #+#              #
-#    Updated: 2022/06/14 01:59:53 by gsever           ###   ########.fr        #
+#    Updated: 2022/06/14 03:33:23 by gsever           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ FLAGS			:= -Wall -Werror -Wextra
 #	Includes Files --> Kutuphane
 INCLUDES_DIR	:= ./includes
 INCLUDES		:= -I$(INCLUDES_DIR)
-MODULES			:= $(wildcard modules/*)
+MODULES			= $(wildcard modules/*)
 
 #	Sources Files --> Kaynak
 SOURCES_DIRECTORY	:= ./sources
@@ -27,7 +27,6 @@ SOURCES			:= $(wildcard $(SOURCES_DIRECTORY)/*.c)
 #	Objects Files --> Derleme sonrasi
 OBJECTS_DIRECTORY	:= ./objects
 OBJECTS			:= $(SOURCES:$(SOURCES_DIRECTORY)/%.c=$(OBJECTS_DIRECTORY)/%.o)
-
 
 #	COLORS --> 🟥 🟩 🟦
 LB		:= \033[0;36m
@@ -40,8 +39,8 @@ X		:= \033[m
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS_DIRECTORY) $(OBJECTS)
-	@ar -rcs $(NAME) $(OBJECTS)
+$(NAME): $(OBJECTS_DIRECTORY) $(OBJECTS) $(MODULES)
+	@ar -rcs $(NAME) $(OBJECTS) $(addsuffix /objects/*.o, $(MODULES))
 	@printf "%-57b %b" "$(GREEN)CREATED $(NAME)" "$(GREEN)[FINISHED]$(X)\n"
 
 $(OBJECTS_DIRECTORY):
@@ -52,8 +51,8 @@ $(OBJECTS_DIRECTORY)/%.o: $(SOURCES_DIRECTORY)/%.c
 	@printf "%-57b %b" "$(BLUE)COMPILED $(LB)$@" "$(GREEN)[✓]$(X)\n"
 
 $(MODULES):
-	@make -C $@ $(MAKECMDGOALS)
-	@printf "%-14b %-42b %b" "$(COM_COLOR)$(MAKECMDGOALS)" "$(OBJ_COLOR)$@" "$(OK_COLOR)[✓]$(NO_COLOR)\n"
+	make -C $@ $(MAKECMDGOALS)
+	@printf "%-14b %-42b %b" "$(BLUE)$(MAKECMDGOALS)" "$(LB)$@" "$(YELLOW)[✓]$(X)\n"
 
 clean:
 	@rm -rf $(OBJECTS_DIRECTORY)
