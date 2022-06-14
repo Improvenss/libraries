@@ -6,7 +6,7 @@
 #    By: gsever <gsever@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/20 02:23:57 by gsever            #+#    #+#              #
-#    Updated: 2022/06/14 03:33:23 by gsever           ###   ########.fr        #
+#    Updated: 2022/06/14 04:31:52 by gsever           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,8 @@ RED		:= \033[0;31m
 RESET	:= \033[0m
 X		:= \033[m
 
+.PHONY: all clean fclean re $(MODULES)
+
 all: $(NAME)
 
 $(NAME): $(OBJECTS_DIRECTORY) $(OBJECTS) $(MODULES)
@@ -45,23 +47,22 @@ $(NAME): $(OBJECTS_DIRECTORY) $(OBJECTS) $(MODULES)
 
 $(OBJECTS_DIRECTORY):
 	@mkdir -p $(OBJECTS_DIRECTORY)
+	@echo "$(NAME): $(GREEN)$(OBJECTS_DIRECTORY) was created$(RESET)"
 
 $(OBJECTS_DIRECTORY)/%.o: $(SOURCES_DIRECTORY)/%.c
 	@$(CC) $(FLAGS) $(INCLUDES) -c $< -o $@
 	@printf "%-57b %b" "$(BLUE)COMPILED $(LB)$@" "$(GREEN)[✓]$(X)\n"
 
 $(MODULES):
-	make -C $@ $(MAKECMDGOALS)
-	@printf "%-14b %-42b %b" "$(BLUE)$(MAKECMDGOALS)" "$(LB)$@" "$(YELLOW)[✓]$(X)\n"
+	@make -C $@ $(MAKECMDGOALS)
+	@printf "%-14b %-42b %b" "$(BLUE)$(MAKECMDGOALS)" "$(LB)$@" "$(GREEN)[✓]$(X)\n"
 
-clean:
+clean: $(MODULES)
 	@rm -rf $(OBJECTS_DIRECTORY)
 	@echo "$(NAME): $(RED)$(OBJECTS_DIRECTORY) was deleted$(RESET)"
 
-fclean: clean
+fclean: clean $(MODULES)
 	@rm -f $(NAME)
 	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 
 re: fclean all
-
-.PHONY: all clean fclean re
